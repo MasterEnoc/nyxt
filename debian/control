@@ -1,0 +1,18 @@
+Source: nyxt
+Section: web
+Priority: optional
+Maintainer: Atlas Engineer LLC
+Build-Depends: debhelper-compat (= 12), libfixposix-dev, libwebkit2gtk-4.0-dev
+Standards-Version: 4.5.0
+Homepage: https://nyxt.atlas.engineer/
+
+Package: nyxt
+Version: 2.1.1
+Section: web
+Priority: optional
+Architecture: amd64
+Multi-Arch: foreign
+Depends: glib-networking, gsettings-desktop-schemas, xclip, enchant, libc6, zlib1g, libwebkit2gtk-4.0-37, libgtk-3-0, libpangocairo-1.0-0, libpango-1.0-0, libcairo2, libgdk-pixbuf2.0-0, libglib2.0-0, libgirepository-1.0-1, libfixposix3, libssl1.1
+Maintainer: Atlas Engineer LLC
+Homepage: https://nyxt.atlas.engineer/
+Description: Extensible web-browser in Common Lisp
