@@ -8,6 +8,6 @@ override_dh_auto_build:
 	make nyxt
 
 override_dh_auto_install:
-	make install DESTDIR=$(shell pwd)/debian/nyxt/
+	make install DESTDIR=$(shell pwd)/debian/nyxt/ PREFIX=/usr/
 
-override_dh_update_autotools_config override_dh_autoreconf override_dh_auto_configure override_dh_auto_test :
+override_dh_update_autotools_config override_dh_autoreconf override_dh_auto_configure override_dh_auto_test override_dh_strip:
